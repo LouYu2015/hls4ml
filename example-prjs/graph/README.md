@@ -8,7 +8,7 @@ git clone git@github.com:hls-fpga-machine-learning/hls4ml -b jmgd/graph
 cd hls4ml/example-prjs/graph
 # setup pytorch conda environment (after installing miniconda3: https://docs.conda.io/en/latest/miniconda.html)
 conda create --name pytorch-training --file pytorch-training.txt 
-source activate pytorch-training
+conda activate pytorch-training
 # setup vivado
 source /home/jduarte1/setup_vivado.sh
 # run inference, and produce weight cpp files from pytroch model files (default 3x3)
