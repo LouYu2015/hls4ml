@@ -9,6 +9,8 @@ cd hls4ml/example-prjs/graph
 # setup pytorch conda environment (after installing miniconda3: https://docs.conda.io/en/latest/miniconda.html)
 conda create --name pytorch-training --file pytorch-training.txt 
 conda activate pytorch-training
+# Install hls4ml
+pip install ../../
 # setup vivado
 source /home/jduarte1/setup_vivado.sh
 # run inference, and produce weight cpp files from pytroch model files (default 3x3)
